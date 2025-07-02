@@ -1,28 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import {
-  Download,
-  ExternalLink,
-  Mail,
-  Phone,
-  MapPin,
-  Linkedin,
-  Github,
-  Database,
-  BarChart3,
-  Brain,
-  Settings,
-  Code,
-  TrendingUp,
-  Users,
-  Award,
-  Calendar,
-  ChevronDown,
-} from "lucide-react"
 import { createLazyFileRoute } from "@tanstack/react-router";
 import Navbar from "@/components/homepage/navbar"
 import About from "@/components/homepage/about"
