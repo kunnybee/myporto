@@ -20,6 +20,7 @@ export const Route = createLazyFileRoute("/")({
 
 function Index() {
  const [activeSection, setActiveSection] = useState("hero")
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,17 +43,10 @@ function Index() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
+ 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-red-500 text-white p-4 text-center">
-  Tailwind CSS is Working
-</div>
+      
       {/* Navigation */}
       <Navbar activeSection={activeSection}/>
 
